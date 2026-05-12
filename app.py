@@ -69,7 +69,7 @@ with st.sidebar:
         st.session_state.messages = [
             {
                 "role": "assistant",
-                "content": "👋 Welcome! Upload a PDF and start chatting."
+                "content": "Welcome! Upload a PDF and start chatting."
             }
         ]
 
@@ -81,14 +81,14 @@ with st.sidebar:
         # Remove uploaded PDF tracking
         st.session_state.current_file = None
 
-        # 🔥 Reset uploader completely
+        # Reset uploader completely
         st.session_state.uploader_key += 1
 
         st.toast("🗑 Chat and PDF cleared!", icon="✅")
 
         st.rerun()
 
-    st.markdown("### 💡 Example Questions")
+    st.markdown("### Example Questions")
 
     st.write("- Summarize this document")
     st.write("- What are key points?")
@@ -273,5 +273,5 @@ if st.session_state.index is not None:
 else:
 
     st.info(
-        "📂 Please upload a PDF to start chatting."
+        "Please upload a PDF to start chatting."
     )
