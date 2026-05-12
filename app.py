@@ -51,7 +51,7 @@ if "embed_model" not in st.session_state:
 if "current_file" not in st.session_state:
     st.session_state.current_file = None
 
-# 🔥 Important for resetting file uploader
+# resetting file uploader
 if "uploader_key" not in st.session_state:
     st.session_state.uploader_key = 0
 
@@ -59,7 +59,7 @@ if "uploader_key" not in st.session_state:
 
 with st.sidebar:
 
-    st.header("⚙️ Controls")
+    st.header(" Controls")
 
     # -------- CLEAR CHAT + PDF -------- #
 
@@ -265,7 +265,7 @@ if st.session_state.index is not None:
             }
         )
 
-        # 🔥 Force instant refresh
+        # Force instant refresh
         st.rerun()
 
 # ---------------- EMPTY STATE ---------------- #
