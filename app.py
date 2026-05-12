@@ -35,7 +35,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             "role": "assistant",
-            "content": "👋 Welcome! Upload a PDF and start chatting."
+            "content": "Welcome! Upload a PDF and start chatting."
         }
     ]
 
